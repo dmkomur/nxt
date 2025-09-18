@@ -13,7 +13,7 @@ interface StatusLableProps {
   disabled?: boolean;
 }
 
-export const StatusLable = ({
+export const StatusLabel = ({
   children,
   status,
   disabled,
