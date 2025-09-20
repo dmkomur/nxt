@@ -1,6 +1,4 @@
-import { Status, StatusLabel } from './components/status-label';
-import AddCompanyButton from './components/add-company-button';
-
+import MagicButton from './components/magic-button';
 export default function Home() {
   return (
     <main>
@@ -11,14 +9,7 @@ export default function Home() {
           second: '2-digit',
         })}
       </h1>
-      <StatusLabel status={Status.ACTIVE}>Active</StatusLabel>
-      <StatusLabel status={Status.NOTACTIVE}>Not Active</StatusLabel>
-      <StatusLabel status={Status.PENDING}>Pending</StatusLabel>
-      <StatusLabel status={Status.SUSPENDED}>Suspended</StatusLabel>
-      <StatusLabel status={Status.ACTIVE} disabled>
-        Disabled
-      </StatusLabel>
-      <AddCompanyButton />
+      <MagicButton />
     </main>
   );
 }
